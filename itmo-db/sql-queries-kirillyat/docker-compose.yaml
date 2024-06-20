@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:13.3
+    volumes:
+      - ./data:/data 
+    environment:
+      POSTGRES_DB: "kirillyat"
+      POSTGRES_USER: "kirillyat"
+      POSTGRES_PASSWORD: "kirillyat"
+    ports:
+      - "5432:5432"
